@@ -79,7 +79,7 @@ namespace PokemonGo.RocketAPI.Console
 
         private void GUI_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Use at your own risk, Niantic is banning these days!");
+            MessageBox.Show("Usando você corre o risco de perder sua conta, cuidado!");
             _clientSettings = new Settings();
             // Create missing Files
             Directory.CreateDirectory(Program.path);
@@ -122,13 +122,13 @@ namespace PokemonGo.RocketAPI.Console
             TranslationHandler.Init();
 
             // Version Infoooo
-            groupBox9.Text = "Your Version: " + Assembly.GetExecutingAssembly().GetName().Version + " | Newest: " + Program.getNewestVersion();
+            groupBox9.Text = "Sua versão: " + Assembly.GetExecutingAssembly().GetName().Version + " | Nova: " + Program.getNewestVersion();
             if (Program.getNewestVersion() > Assembly.GetExecutingAssembly().GetName().Version)
             {
-                DialogResult dialogResult = MessageBox.Show("There is an Update on Github. do you want to open it ?", "Newest Version: " + Program.getNewestVersion(), MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show("Há uma nova versão no Github, deseja baixar ?", "Nova versão: " + Program.getNewestVersion(), MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    Process.Start("https://github.com/Ar1i/PokemonGo-Bot");
+                    Process.Start("https://github.com/uiliannn/PokemonGo-Bot2");
                 }
                 else if (dialogResult == DialogResult.No)
                 {
@@ -284,8 +284,8 @@ namespace PokemonGo.RocketAPI.Console
             }
             else
             {
-                textBox3.Text = "40,764883";
-                textBox4.Text = "-73,972967";
+                textBox3.Text = "-25,42";
+                textBox4.Text = "-49,27";
                 textBox5.Text = "10";
                 textBox6.Text = "50";
                 textBox7.Text = "5000";
@@ -896,13 +896,10 @@ namespace PokemonGo.RocketAPI.Console
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/Ar1i/PokemonGo-Bot");
+            Process.Start("https://github.com/uiliannn/PokemonGo-Bot2");
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("https://high-minded.net/threads/pokemon-go-c-bot-safer-better.50731/");
-        }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -948,10 +945,7 @@ namespace PokemonGo.RocketAPI.Console
             textBox25.Text = Convert.ToString(itemSumme);
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RUNUBQEANCAGQ");
-        }
+       
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -1100,13 +1094,10 @@ namespace PokemonGo.RocketAPI.Console
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://twitter.com/Ar1iDev");
+            Process.Start("https://www.facebook.com/uilian.gustavo");
         }
 
-        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("https://twitter.com/LoganPunkt");
-        }
+       
 
         private void checkBox13_CheckedChanged(object sender, EventArgs e)
         {
